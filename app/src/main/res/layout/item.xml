@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="#FCE4EC"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/code_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/onePadding"
+        android:paddingRight="@dimen/onePadding"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        tools:text="131312" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/onePadding"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#1B5E20"
+            android:textStyle="bold"
+            tools:text="Đã không yêu thì thôi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/onePadding"
+                android:text="@string/singer"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#EC407A"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/singer_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/onePadding"
+                android:paddingStart="@dimen/onePadding"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#EC407A"
+                android:textStyle="bold"
+                tools:text="HKT" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/like_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/onePadding"
+                android:paddingRight="@dimen/onePadding"
+                android:src="@drawable/like"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/dislike_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/onePadding"
+                android:paddingRight="@dimen/onePadding"
+                android:src="@drawable/dislike"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
